@@ -30,11 +30,12 @@ Delete: Delete a course.
 
 
 Run the Backend
-To run the backend:
+To run the backend:npm run dev
 
 
 
-npm run dev
+
+
 API Endpoints
 1. Authentication
 POST /api/v1/users/signup: Register a new user.
@@ -44,6 +45,12 @@ POST /api/v1/users/signin: Log in an existing user.
 
 Request Body: { "email": "johndoe@example.com", "password": "password123" }
 Response: { "token": "your_jwt_token" }
+
+
+
+
+
+
 2. Courses
 POST /api/v1/courses/new-course: Create a new course.
 
@@ -57,11 +64,15 @@ DELETE /api/v1/courses/delete/:id: Delete a course.
 
 
 
+
+
 Validation & Error Handling
 
 Email validation is implemented during registration to ensure the email is unique.
 Passwords are hashed using bcrypt before saving them to the database.
 Proper error handling is included in all API routes with meaningful error messages and status codes.
+
+
 
 
 
@@ -72,12 +83,17 @@ The frontend communicates with the backend using Axios for API requests.
 The application is fully responsive and works well on both desktop and mobile devices.
 
 
+
+
+
 Technologies Used
 
 Backend: Node.js, Express, MongoDB, JWT, bcrypt
 Frontend: React, Axios, Vite (for faster builds)
 Database: MongoDB
 Authentication: JWT (JSON Web Tokens)
+
+
 
 
 Running the Project
