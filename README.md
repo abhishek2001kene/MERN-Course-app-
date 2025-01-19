@@ -1,4 +1,6 @@
-MERN Stack Application - Course Management
+MERN Stack Application - 
+Course Management
+
 This is a full-stack web application built using the MERN stack (MongoDB, Express, React, Node.js). It implements a simple course management system with the following features:
 
 User Authentication (Register, Login)
