@@ -4,7 +4,6 @@ Course Management
 This is a full-stack web application built using the MERN stack (MongoDB, Express, React, Node.js). It implements a simple course management system with the following features:
 
 
-
 User Authentication (Register, Login)
 Courses CRUD Operations (Create, Read, Edit, Delete)
 The application allows users to register, log in, and perform CRUD operations on courses. The backend is powered by Node.js with Express, MongoDB is used for data storage, and the frontend is built with React.
