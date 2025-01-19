@@ -49,7 +49,7 @@ function SignUpPage() {
     try {
       // Make POST request to the server to sign up the user
       const response = await axios.post(
-        "http://localhost:3000/api/v1/users/signup",   
+        "https://mern-course-app-1.onrender.com/api/v1/users/signup",   
         { fullName, email, password }
       );
       setMessage(response.data.message);

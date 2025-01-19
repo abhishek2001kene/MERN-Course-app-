@@ -14,7 +14,7 @@ const _dirname = path.resolve()
 app.use(                  // Middleware to enable CORS 
     core(
         {
-        origin:process.env.CORS_ORIGIN ,    //initialising the originfor core
+        origin:"https://mern-course-app-1.onrender.com" ,    //initialising the originfor core
         credentials:true,                   // for sending cookies and credentials with requests
         }
     ))

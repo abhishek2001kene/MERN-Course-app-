@@ -48,11 +48,11 @@ function AddCource() {
       // Make an HTTP request based on whether the user is editing or adding a new course
       const response = isEdit
         ? await axios.put(
-            `http://localhost:3000/api/v1/cources/update/${location.state.currentCource._id}`,
+            `https://mern-course-app-1.onrender.com/api/v1/cources/update/${location.state.currentCource._id}`,
             { courceName, courceDiscription, courcePrice }
           )
         : await axios.post(
-            "http://localhost:3000/api/v1/cources/new-cource",
+            "https://mern-course-app-1.onrender.com/api/v1/cources/new-cource",
             { courceName, courceDiscription, courcePrice }
           );
       setmessage(response.data.message);     // Set success message from the response

@@ -16,7 +16,7 @@ function Home() {
     try {
       setpending(true);             // Set loading to true before making the request
       const responce = await axios.get(
-        "http://localhost:3000/api/v1/cources/courcelist"
+        "https://mern-course-app-1.onrender.com/api/v1/cources/courcelist"
       );
 
       const result = responce.data;  // Get data from response
@@ -41,7 +41,7 @@ function Home() {
   const handleDelete = async (currentId) => {
     try {
       const response = await axios.delete(
-        `http://localhost:3000/api/v1/cources/delete/${currentId}`,
+        `https://mern-course-app-1.onrender.com/api/v1/cources/delete/${currentId}`,
         {
           withCredentials: true,  // Include cookies in the request
         }

@@ -26,7 +26,7 @@ const SingninPage = () => {
 
       // Sending a POST request to the backend to authenticate the user
 
-      const response = await axios.post("http://localhost:3000/api/v1/users/signin", {
+      const response = await axios.post("https://mern-course-app-1.onrender.com/api/v1/users/signin", {
         email,
         password,
       },
